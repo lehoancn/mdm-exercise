@@ -1,0 +1,12 @@
+<div>
+  <input placeholder="Email" type="email" [(ngModel)]="email"><br><br>
+  <input placeholder="Rolename"  [(ngModel)]="rolename"><br><br>
+  <button (click)="addUser()">Add user</button>
+</div>
+  
+<br >
+<ul>
+  <li *ngFor="let user of users">{{ user.id + " " + user.email + " " + user.rolename }}
+    <button (click)="deleteUser(user.id)">Delete</button>
+  </li>  
+</ul>
