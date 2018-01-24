@@ -1,0 +1,23 @@
+<header id="header">
+    <div class="logo">
+        <img src="./assets/images/logo.svg">
+    </div>
+    <div id="menu">
+        <div class="userid">lehoancn@gmail.com</div>
+    </div>
+</header>
+<div class="wrap">
+    <nav id="nav">
+        <ul class="nav">
+            <li>
+                <a routerLink="/users">User management</a>
+            </li>
+            <li>
+                <a routerLink="/groups">Group management</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="content-area">
+        <router-outlet></router-outlet>
+    </section>
+</div>
